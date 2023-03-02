@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Views.EmpName"
+             xmlns:local="clr-namespace:MauiApp1.Models"
+             Title="EmpName">
+    <VerticalStackLayout>
+        <Label Text="Enter the Name: "></Label>
+        <Entry Text="{Binding Name}"></Entry>
+
+        <Label Text="{Binding Name}" VerticalOptions="Center" FontSize="Large"></Label>
+        <Button Text="Save" Command="{Binding SaveCommand}"></Button>
+        
+    </VerticalStackLayout>
+</ContentPage>
